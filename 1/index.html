@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .w-1000{
+            width:1000px;
+            margin: 0 auto;
+        }
+        .t20{
+            margin-top: 20px !important;
+        }
+        .cf{
+            zoom: 1;
+        }
+        .lesson-classfiy-nav{
+            position: relative;
+            width: 210px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+
+        }
+        .course-list{
+            padding: 0 20px;
+            font-size: 14px;
+            height: 60px;
+            position: relative;
+            z-index: 99;
+        }
+        .cur{
+            color: #cc0000;
+        }
+        .course-list a.course-link{
+            height: 59px;
+            line-height: 59px;
+            border-bottom: 1px solid #edf1f2;
+            display: block;
+            padding-left: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .course-list .lesson-list-show{
+            position: absolute;
+            top:0;
+            left: 200px;
+            width: 290px;
+            font-size: 14px;
+            background-color: #fff;
+            z-index: 9;
+            box-shadow: 0px 2px 5px #d5d7d8;
+        }
+        .course-sort-bg{
+            position: absolute;
+            left: -5px;
+            top: 0;
+            height: 60px;
+            width: 5px;
+            background: #fff;
+        }
+        .course-list .lesson-list-show ul{
+            padding: 10px;
+            overflow: hidden;
+        }
+        .course-list .lesson-list-show li{
+            width: 80px;
+            line-height: 20px;
+            float: left;
+            font-size: 12px;
+            margin: 5px;
+        }
+        .course-list .lesson-list-show li a{
+            display: block;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            transition: background 0.6s;
+            -moz-transition: background 0.6s;
+            -webkit-transition: background 0.6s;
+            -o-transition: background 0.6s;
+            transition: color 0.3s;
+            -moz-transition: color 0.3s;
+            -webkit-transition: color 0.3s;
+            -o-transition: color 0.3s;
+        }
+        .course-list .lesson-list-show li a:hover{
+            background: #cc0000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="w-1000 t20 cf">
+    <div class="lesson-classfiy-nav">
+        <ul>
+            <li class="course-list">
+
+                    <a href class="course-link">移动应用开发</a>
+                    <div class="lesson-list-show">
+
+                    </div>
+
+            </li>
+            <li class="course-list cur">
+
+                    <a href class="course-link">移动应用开发</a>
+                    <div class="lesson-list-show">
+                        <div class="course-sort-bg"></div>
+                        <ul>
+                            <li>
+                                <a href="">html</a>
+                            </li>
+                            <li>
+                                <a href="">html</a>
+                            </li>
+                            <li>
+                                <a href="">html</a>
+                            </li>
+                            <li>
+                                <a href="">html</a>
+                            </li>
+                            <li>
+                                <a href="">html</a>
+                            </li>
+                        </ul>
+                    </div>
+
+            </li>
+            <li class="course-list">
+
+                <a href class="course-link">移动应用开发</a>
+                <div class="lesson-list-show">
+
+                </div>
+
+            </li>
+            <li class="course-list">
+
+                <a href class="course-link">移动应用开发</a>
+                <div class="lesson-list-show">
+
+                </div>
+
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
